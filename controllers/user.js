@@ -8,7 +8,7 @@ const secret = 'test';
 export const signin = async (req, res) => {
   const { email, password } = req.body;
 
-  try {
+  try { dfdfd
     const oldUser = await UserModal.findOne({ email });
 
     if (!oldUser) return res.status(404).json({ message: "User doesn't exist" });
